@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <h3>Cách tỏ tình với crush!!!!</h3>
+    <button class="js-click-open"><span>Bấm ở đây</span></button>
+    <div class="modal js-modal">
+        <h2>
+            <span style="--i:9;">!</span>
+            <span style="--i:10;">!</span>
+            <span style="--i:1; margin-left: 5px;">Đ</span>
+            <span style="--i:2;">ị</span>
+            <span style="--i:3;">t</span>
+            <span style="--i:4; margin-left: 5px;">M</span>
+            <span style="--i:5;">ẹ</span>
+            <span style="--i:6; margin-left: 5px;">M</span>
+            <span style="--i:7;">à</span>
+            <span style="--i:8;">y</span>
+            <span style="--i:11; margin-left: 5px;">!</span>
+            <span style="--i:12;">!</span>
+        </h2>
+        <button class="js-click-close">Quit</button>
+    </div>
+
+    <script>
+        const clickOpen = document.querySelector('.js-click-open')
+        const modal = document.querySelector('.js-modal')
+        const clickClose = document.querySelector('.js-click-close')
+
+        clickOpen.addEventListener('click', function () {
+            modal.classList.add('open')
+            }
+        )
+
+        clickClose.addEventListener('click', function () {
+            modal.classList.remove('open')
+            }
+        )
+    </script>
+</body>
+</html>
